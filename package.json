@@ -1,0 +1,11 @@
+{
+  "name": "js-demo-project",
+  "version": "1.0.0",
+  "description": "Simple Node.js project for Jenkins pipeline",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Renganayaki",
+  "license": "ISC"
+}
