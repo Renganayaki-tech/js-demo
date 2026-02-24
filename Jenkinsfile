@@ -4,10 +4,12 @@ pipeline {
     stages {
 
         stage('Checkout') {
-            steps {
-                git 'git@github.com:Renganayaki-tech/js-demo.git'
-            }
-        }
+    steps {
+        git branch: 'main',
+            url: 'https://github.com/Renganayaki-tech/js-demo.git',
+            credentialsId: 'github-ssh'
+    }
+}
 
         stage('Install Dependencies') {
             steps {
@@ -23,3 +25,4 @@ pipeline {
     }
 
 }
+
