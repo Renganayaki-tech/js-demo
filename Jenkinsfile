@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/YOUR_GITHUB_USERNAME/js-demo-project.git'
+                git 'git@github.com:Renganayaki-tech/js-demo.git'
             }
         }
 
@@ -21,4 +21,5 @@ pipeline {
             }
         }
     }
+
 }
